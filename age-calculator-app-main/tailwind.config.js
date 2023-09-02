@@ -13,7 +13,7 @@ module.exports = {
         'sans': ['Poppins', 'sans-serif']
       },
       colors:{
-        purple: 'hsl(259, 100%, 65%)',
+        Purple: 'hsl(259, 100%, 65%)',
         lightRed: 'hsl(0, 100%, 67%)',
         // neutral
         white: 'hsl(0, 0%, 100%)',
@@ -21,6 +21,10 @@ module.exports = {
         lightGrey: 'hsl(0, 0%, 86%)',
         smokeyGrey: 'hsl(0, 1%, 44%)',
         offBlack: 'hsl(0, 0%, 8%)',
+      },
+      borderRadius: {
+        'large':'100px',
+        'full': '200px'
       }
     },
   },
