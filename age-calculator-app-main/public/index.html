@@ -12,34 +12,49 @@
   <main class="flex flex-col w-11/12 my-9 mx-auto bg-white
     space-y-7 rounded-2xl rounded-br-large py-9 md:w-3/5 md:py-12 md:rounded-3xl 
     md:rounded-br-full">
-    <form action="#" class="flex flex-row justify-evenly">
-      <div class="input-field flex flex-col w-3/12 space-y-1 md:space-y-3">
-        <label for="day" class="text-smokeyGrey text-xs font-light font-sans uppercase
-          md:text-base">Day</label>
-        <input type="text" name="day" id="day" placeholder="DD" class="w-4/5
-          font-sans border border-lightGrey rounded-md  p-2 md:text-xl md:w-3/5">
-    </div>
-      <div class="input-field flex flex-col w-3/12 space-y-1 md:space-y-3">
-        <label for="day" class="text-smokeyGrey text-xs font-light font-sans uppercase
-          md:text-base">Month</label>
-        <input type="text" name="day" id="day" placeholder="MM" class="w-4/5
-          font-sans border border-lightGrey rounded-md  p-2 md:text-xl md:w-3/5">
+    <p class="hidden text-sm text-lightRed font-normal italic text-center">
+      **Press the arrow button below to submit**
+    </p>
+    <form action="#" class="flex flex-col space-y-7">
+      <div class="flex flex-row justify-evenly">
+        <div class="input-field flex flex-col w-3/12 space-y-1 md:space-y-3">
+          <label for="day" class="text-smokeyGrey text-xs font-light font-sans uppercase
+            md:text-base">Day</label>
+          <input type="number" name="day" id="day" placeholder="DD" class="w-4/5
+            font-sans border border-lightGrey rounded-md  p-2 md:text-xl md:w-3/5"
+            required min="1" max="31" aria-describedby="day-error">
+          <p class="text-lightRed text-xs font-extralight italic
+            w-full hidden md:text-sm" id="day-error">This field is required</p>
+        </div>
+        <div class="input-field flex flex-col w-3/12 space-y-1 md:space-y-3">
+          <label for="day" class="text-smokeyGrey text-xs font-light font-sans uppercase
+            md:text-base">Month</label>
+          <input type="number" name="month" id="month" placeholder="MM" class="w-4/5
+            font-sans border border-lightGrey rounded-md  p-2 md:text-xl md:w-3/5"
+            required min="1" max="12" aria-describedby="month-error">
+          <p class="text-lightRed text-xs font-extralight italic
+            w-full hidden md:text-sm" id="month-error">This field is required</p>
+        </div>
+        <div class="input-field flex flex-col w-3/12 space-y-1 md:space-y-3">
+          <label for="day" class="text-smokeyGrey text-xs font-light font-sans uppercase
+            md:text-base">Year</label>
+          <input type="number" name="year" id="year" placeholder="YYYY" class="w-4/5
+            font-sans border border-lightGrey rounded-md  p-2 md:text-xl md:w-3/5"
+            required aria-describedby="year-error">
+          <p class="text-lightRed text-xs font-extralight italic
+            w-full hidden md:text-sm" id="year-error">This field is required</p>
+        </div>
       </div>
-      <div class="input-field flex flex-col w-3/12 space-y-1 md:space-y-3">
-        <label for="day" class="text-smokeyGrey text-xs font-light font-sans uppercase
-          md:text-base">Year</label>
-        <input type="text" name="day" id="day" placeholder="YYYY" class="w-4/5
-          font-sans border border-lightGrey rounded-md  p-2 md:text-xl md:w-3/5">
-      </div>
-    </form>
-    <div class="flex flex-row items-center justify-center md:justify-start
+      <div class="flex flex-row items-center justify-center md:justify-start
       md:w-11/12 md:mx-auto">
       <div class="w-2/6 border border-lightGrey h-0 md:w-11/12"></div>
-      <div class="bg-Purple p-3 rounded-full md:p-4">
+      <button class="bg-Purple p-3 rounded-full md:p-4" type="submit">
         <img src="assets/images/icon-arrow.svg">
-      </div>
+      </button>
       <div class="w-2/6 border border-lightGrey h-0 md:hidden"></div>
     </div>
+    </form>
+    
     <div id="age-display" class="flex flex-col items-start w-10/12 mx-auto">
       <p id="years" class="text-5xl font-bold italic
        md:text-7xl"><span class="text-Purple">--</span>years</p>
@@ -49,5 +64,6 @@
        md:text-7xl"><span class="text-Purple">--</span>days</p>
     </div>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
