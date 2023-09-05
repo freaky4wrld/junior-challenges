@@ -3,8 +3,11 @@ const formElement = document.querySelector('form');
 // const inputList = document.querySelectorAll('input')
 // const dayInput = document.getElementById('day')
 // const monthInput = document.getElementById('month')
-// const yearInput = document.getElementById('year')
+const yearInput = document.getElementById('year')
 const date = new Date();
+yearInput.setAttribute('min','1')
+yearInput.setAttribute('max',`${date.getFullYear()}`)
+
 const fieldInputs = Array.from(formElement.elements)
 formElement.setAttribute('novalidate',"");
 
@@ -20,20 +23,8 @@ fieldInputs.forEach((input)=>{
     input.addEventListener('invalid',()=>{
         showError(input)
     })
-    input.addEventListener('change',()=>{
-        if(input==fieldInputs[fieldInputs.length-2]){
-            console.log(input)
-            if(parseInt(input.value)>date.getFullYear()){
-                console.log(input.value)
-                input.setCustomValidity('true')
-                showError(input)
-            }else{
-                input.setCustomValidity('false')
-                hideError(input)
-                console.log('hide')
-            }
-        }
-        const valid = input.checkValidity() || input.validity.customError
+    input.addEventListener('input',()=>{
+        const valid = input.checkValidity()
         if(valid){
             hideError(input)
         }
@@ -46,9 +37,11 @@ fieldInputs.forEach((input)=>{
 function getMessage(input){
     const validity = input.validity
     if(validity.valueMissing) return "This field is required";
-    if(validity.rangeOverflow) return `Must be a valid ${input.id}`;
+    if(validity.rangeOverflow) {
+        if(input.id=='year'){return "Must be in the past"}
+        else{return `Must be a valid ${input.id}`;}    
+    }
     if(validity.rangeUnderflow) return `Must be a valid ${input.id}`;
-    if(input.id=='year'){return "Must be in the future"}
 }
 
 function showError(input){
