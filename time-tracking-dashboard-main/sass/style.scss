@@ -10,7 +10,7 @@ main{
     grid-template-columns: 1fr 3fr;
     gap: 2.5rem;
     width: 88%;
-    margin: 2rem auto;
+    margin: 3.6rem auto;
 }
 
 aside{
@@ -51,6 +51,10 @@ h1{
     a{
         text-decoration: none;
         color: $desaturated-blue;
+        transition-duration: 0.21s;
+    }
+    a:hover{
+        color: $font-light;
     }
 }
 
@@ -75,6 +79,8 @@ h1{
     padding: 1rem;
     background: $dark-blue;
     border-radius: 10px;
+    transition: all;
+    transition-duration: 0.5s;
     .title{
         display: flex;
         justify-content: space-between;
@@ -82,6 +88,10 @@ h1{
         font-size: $title-font-size;
         font-weight: 500;
     }
+}
+.card-info:hover{
+    cursor: pointer;
+    filter: brightness(1.75);
 }
 
 .stats{
@@ -98,9 +108,14 @@ h1{
 }
 
 .btn{
-    background-color: $dark-blue;
+    background-color: transparent;
     height: 50%;
     border: none;
+    transition-duration: 0.16s;
+}
+.btn:hover{
+    cursor: pointer;
+    filter: brightness(0)
 }
 
 #work{
