@@ -1,1 +1,56 @@
 @import 'config';
+
+body{
+    font-family: "Rubik", sans-serif;
+    background: $very-dark-blue;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+#card-group{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+} 
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+    background: $dark-blue;
+    color: $font-light;
+    border-radius: 0 0 10px 10px;
+}
+.profile{
+    background: $Blue;
+    padding: 2rem;
+    border-radius:10px;
+    img{
+        border: 3.6px solid $font-light;
+        border-radius: 50%;
+        width: 36%;
+    }
+}
+h1{
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.3;
+    span{
+        font-size: 1.11rem;
+        color: $pale-blue;
+    }
+}
+.stats-links{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    a{
+        text-decoration: none;
+        color: $desaturated-blue;
+    }
+}
