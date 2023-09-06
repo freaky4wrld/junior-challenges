@@ -22,17 +22,27 @@ formElement.setAttribute('novalidate',"");
 
 // to act on submit
 formElement.addEventListener('submit',(event)=>{
+    document.getElementById('instruct').classList.add('hidden')
     const allValid = formElement.checkValidity();
     if(!allValid){
         event.preventDefault();
     }else{
         event.preventDefault();
-        calcDate()
+        if(validateDate()){
+            alert('Must be a valid date')
+            showError(dayInput)
+        }else{
+            calcDate()
+        }
     }
+})
+formElement.addEventListener('input',()=>{
+    document.getElementById('instruct').classList.remove('hidden')
 })
 
 // to validate the individual inputs
-fieldInputs.forEach((input)=>{  
+fieldInputs.forEach((input)=>{
+    // dynamicDateLimiter()  
     input.setAttribute('aria-invalid',"false");
     input.addEventListener('invalid',()=>{
         showError(input)
@@ -48,7 +58,7 @@ fieldInputs.forEach((input)=>{
     })
 })
 
-// to get the custom erro messages
+// to get the custom error messages
 function getMessage(input){
     const validity = input.validity
     if(validity.valueMissing) return "This field is required";
@@ -106,4 +116,15 @@ function calcDate(){
 function getLastDate(date){
     let prevMonthDate = new Date(date.getFullYear(),date.getMonth(),0)
     return prevMonthDate.getDate()
+}
+
+function validateDate(){
+    let timestamp = Date.parse(`${yearInput.value}-${monthInput.value}-${dayInput.value}`)
+    if(isNaN(timestamp)){
+        return true    
+    }else{
+        return false
+    }
+    
+
 }
