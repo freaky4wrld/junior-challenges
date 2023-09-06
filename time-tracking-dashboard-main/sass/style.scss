@@ -61,7 +61,6 @@ h1{
 } 
 
 .cards{
-    background-color: $light-orange;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -102,4 +101,23 @@ h1{
     background-color: $dark-blue;
     height: 50%;
     border: none;
+}
+
+#work{
+    @include addColorImage(url(../images/icon-work.svg),$light-orange);
+}
+#play{
+    @include addColorImage(url(../images/icon-play.svg),$soft-blue);
+}
+#study{
+    @include addColorImage(url(../images/icon-study.svg),$light-red);
+}
+#exercise{
+    @include addColorImage(url(../images/icon-exercise.svg),$lime-green);
+}
+#social{
+    @include addColorImage(url(../images/icon-social.svg),$Violet);
+}
+#self-care{
+    @include addColorImage(url(../images/icon-self-care.svg),$soft-orange);
 }

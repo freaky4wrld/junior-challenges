@@ -18,3 +18,10 @@ $pale-blue: hsl(236, 100%, 87%);
 
 // 
 $title-font-size: 18px;
+
+@mixin addColorImage($img-url,$bg-color){
+    background-color: $bg-color;
+    background-image: $img-url;
+    background-repeat: no-repeat;
+    background-position: top -7px right 7px;
+}
