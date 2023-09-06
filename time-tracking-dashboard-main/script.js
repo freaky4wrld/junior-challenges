@@ -6,7 +6,8 @@ const titles = document.querySelectorAll('.title-text');
 const currentStats = document.querySelectorAll('.current-stats');
 const pastStat = document.querySelectorAll('.prev');
 
-cardGroup.style.visibility = 'hidden';
+// cardGroup.style.visibility = 'hidden';
+
 weekBtn.addEventListener('click',showWeekData);
 monthBtn.addEventListener('click',showMonthData);
 dailyBtn.addEventListener('click',showDailyData);
