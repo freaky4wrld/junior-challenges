@@ -6,7 +6,6 @@ const titles = document.querySelectorAll('.title-text');
 const currentStats = document.querySelectorAll('.current-stats');
 const pastStat = document.querySelectorAll('.prev');
 
-// cardGroup.style.visibility = 'hidden';
 
 weekBtn.addEventListener('click',showWeekData);
 monthBtn.addEventListener('click',showMonthData);
@@ -14,6 +13,7 @@ dailyBtn.addEventListener('click',showDailyData);
 
 function showDailyData(){
     cardGroup.style.visibility = 'visible'
+    showslideAnimation();
     const xhr = new XMLHttpRequest();
     xhr.open("GET", "data.json", true);
     xhr.onload = function(){
@@ -29,7 +29,8 @@ function showDailyData(){
 
 
 function showWeekData(){
-    cardGroup.style.visibility = 'visible'
+    cardGroup.style.visibility = 'visible';
+    showslideAnimation();
     const xhr = new XMLHttpRequest();
     xhr.open("GET", "data.json", true);
     xhr.onload = function(){
@@ -44,7 +45,8 @@ function showWeekData(){
 }
 
 function showMonthData(){
-    cardGroup.style.visibility = 'visible'
+    cardGroup.style.visibility = 'visible';
+    showslideAnimation();
     const xhr = new XMLHttpRequest();
     xhr.open("GET", "data.json", true);
     xhr.onload = function(){
@@ -112,4 +114,13 @@ function changePastMonthStat(usersCurrent){
                 stat.innerText = `${usersCurrent[index].timeframes.monthly.previous}hrs`;
                 index++;
             })
+}
+
+function showslideAnimation(){
+    cardGroup.classList.add('animate__animated','animate__bounceInUp')
+}
+function showFlipAnimation(titles){
+    titles.forEach((title)=>{
+        title.classList.add('animate__animated','animate__flipInX')
+    })
 }

@@ -17,11 +17,9 @@
 
 @media screen and (max-width: 700px){
     main{
-        // display: inline-grid;
         width: 81%;
         grid-template-columns: unset;
         margin: 4rem auto;
-        // gap: 0.9rem;
     }
     aside{
         align-items: center;
