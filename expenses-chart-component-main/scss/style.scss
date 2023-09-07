@@ -1,5 +1,5 @@
 @import 'config';
-
+@import 'utilities';
 *{
     margin: 0;
     padding: 0;   
@@ -7,4 +7,36 @@
 }
 body{
     background: $Cream;
+}
+
+main{
+    font-family: $global-font;
+    width: 63%;
+    margin: 3.6rem auto;
+    @include flexCol();
+    gap: 2rem;
+}
+
+#balance-info{
+    @include flexShow();
+    background: $soft-red;
+    color: $very-pale-orange;
+}
+
+.info-text{
+    @include flexCol();
+    gap: 0.7rem;
+}
+
+#chart-container{
+    @include flexCol();
+    gap: 2rem;
+    background: $very-pale-orange;
+}
+#balance-info,#chart-container{
+    padding: 2rem;
+    border-radius: 1.6rem;
+}
+.total-display{
+    @include flexShow();
 }
