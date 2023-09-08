@@ -1,12 +1,16 @@
 const chartDisplay = document.getElementById('chartDisplay');
+const disclaimer = document.getElementById('disclaimer'); //get the instruction element
 const labelsArray = createLabels(); //get the days from json (array)
 const amounts = createAmounts();    //get the expenses on each day from json (array)
 //color of the bars
 let labelsBgColors = ['#ec775f','#ec775f','#ec775f','#ec775f','#ec775f','#ec775f','#ec775f']; 
 changeCurrentDayColor(labelsBgColors); //changing the current day bar-color
 
-// chart creation
+chartDisplay.addEventListener('click',()=>{
+    disclaimer.style.display = 'none';
+})
 
+// chart creation
 // chart font and size change
 Chart.defaults.font.family = 'DM Sans';
 Chart.defaults.font.size = 16;
