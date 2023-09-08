@@ -556,6 +556,10 @@ video {
   display: flex;
 }
 
+.hidden{
+  display: none;
+}
+
 .h-2{
   height: 0.5rem;
 }
@@ -703,11 +707,6 @@ video {
   line-height: 1.25rem;
 }
 
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .font-bold{
   font-weight: 700;
 }
@@ -757,30 +756,13 @@ video {
     margin-right: auto;
   }
 
-  .md\:my-4{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
   .md\:my-7{
     margin-top: 1.75rem;
     margin-bottom: 1.75rem;
   }
 
-  .md\:ml-4{
-    margin-left: 1rem;
-  }
-
   .md\:ml-2{
     margin-left: 0.5rem;
-  }
-
-  .md\:h-12{
-    height: 3rem;
-  }
-
-  .md\:h-9{
-    height: 2.25rem;
   }
 
   .md\:h-7{
@@ -791,18 +773,6 @@ video {
     width: 60%;
   }
 
-  .md\:w-12{
-    width: 3rem;
-  }
-
-  .md\:w-9{
-    width: 2.25rem;
-  }
-
-  .md\:w-7{
-    width: 1.75rem;
-  }
-
   .md\:w-8{
     width: 2rem;
   }
@@ -811,39 +781,18 @@ video {
     align-items: center;
   }
 
-  .md\:rounded{
-    border-radius: 0.25rem;
+  .md\:space-x-3 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:rounded-xl{
     border-radius: 0.75rem;
   }
 
-  .md\:p-7{
-    padding: 1.75rem;
-  }
-
   .md\:p-4{
     padding: 1rem;
-  }
-
-  .md\:p-12{
-    padding: 3rem;
-  }
-
-  .md\:py-12{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  .md\:px-9{
-    padding-left: 2.25rem;
-    padding-right: 2.25rem;
-  }
-
-  .md\:px-1{
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
   }
 
   .md\:px-12{
@@ -854,11 +803,6 @@ video {
   .md\:py-9{
     padding-top: 2.25rem;
     padding-bottom: 2.25rem;
-  }
-
-  .md\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .md\:text-lg{
@@ -873,14 +817,6 @@ video {
 }
 
 @media (min-width: 976px){
-  .lg\:h-7{
-    height: 1.75rem;
-  }
-
-  .lg\:w-8{
-    width: 2rem;
-  }
-
   .lg\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -888,11 +824,6 @@ video {
 
   .lg\:text-xl{
     font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .lg\:text-lg{
-    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Notifications page</title>
@@ -11,17 +11,17 @@
 <body class="bg-lightGrayishBlue2 font-sans">
   <main class="bg-White flex flex-col p-4 space-y-4 md:w-3/5 md:mx-auto md:my-7 md:py-9 md:px-12 md:rounded-xl">
       <div id="notifications-header" class="flex flex-row justify-between items-center">
-        <div class="flex flex-row text-veryDarkBlue items-center w-2/5 space-x-1">
+        <div class="flex flex-row text-veryDarkBlue items-center w-2/5 space-x-1 md:space-x-3">
           <a href="#" class="font-bold text-lg md:text-xl lg:text-2xl">Notifications</a>
           <a href="#" class="bg-Blue text-White rounded-md w-2/12
             text-sm text-center font-bold
-            md:w-8 md:h-7 md:text-lg md:ml-2">3</a>
+            md:w-8 md:h-7 md:text-lg">3</a>
         </div>
         <div class="flex flex-row items-center justify-end w-2/5">
-          <a href="#" class="text-darkGrayishBlue md:text-lg lg:text-xl hover:text-Blue" id="mark-read">Mark all as read</a>
+          <a href="#" class="hidden text-darkGrayishBlue hover:text-Blue md:text-lg lg:text-xl" id="mark-read">Mark all as read</a>
         </div>
       </div>
-      <div id="posts-all" class="flex flex-col space-y-4">
+      <div id="posts-all" class="hidden flex-col space-y-4">
         <div class="unread flex flex-row bg-lightGrayishBlue1 rounded-md p-2 space-x-4 md:items-center md:p-4">
           <a href="#" class="w-1/6">
             <img src="images/avatar-mark-webber.webp" alt="Mark Webber Profile" >
@@ -31,7 +31,7 @@
               <a href="#">Mark Webber</a>
               </span> reacted to your recent post <span class="text-darkGrayishBlue font-bold hover:text-Blue">
                 <a href="#">My first tournament today!</a>
-              </span> <span class="bg-Red w-2 h-2 rounded-full inline-block ml-1"></span>
+              </span> <span class="bg-Red w-2 h-2 rounded-full inline-block ml-1 new-icon"></span>
             </p>
             <time class="text-grayishBlue font-normal">1m ago</time>
           </div>
@@ -43,7 +43,7 @@
           <div class="flex flex-col w-4/5">
             <p class="text-grayishBlue font-normal"><span class="text-veryDarkBlue font-bold hover:text-Blue">
               <a href="#">Angela Gray</a>
-              </span> followed you <span class="bg-Red w-2 h-2 rounded-full inline-block ml-1"></span>
+              </span> followed you <span class="bg-Red w-2 h-2 rounded-full inline-block ml-1 new-icon"></span>
             </p>
             <time class="text-grayishBlue font-normal">5m ago</time>
           </div>
@@ -57,7 +57,7 @@
               <a href="#">Jacob Thompson</a>
               </span> has joined your group <span class="text-Blue font-bold hover:text-Blue">
                 <a href="#">Chess Club</a>
-              </span> <span class="bg-Red w-2 h-2 rounded-full inline-block ml-1"></span>
+              </span> <span class="bg-Red w-2 h-2 rounded-full inline-block ml-1 new-icon"></span>
             </p>
             <time class="text-grayishBlue font-normal">1 day ago</time>
           </div>
@@ -94,7 +94,7 @@
             <img src="images/image-chess.webp" alt="" class="w-11/12">
           </a>
         </div>
-        <div class="unread flex flex-row bg-White rounded-md p-2 space-x-4 md:items-center md:p-4">
+        <div class="read flex flex-row bg-White rounded-md p-2 space-x-4 md:items-center md:p-4">
           <a href="#" class="w-1/6">
             <img src="images/avatar-nathan-peterson.webp" alt="Nathan Peterson Profile" >
           </a>
@@ -108,7 +108,7 @@
             <time class="text-grayishBlue font-normal">2 weeks ago</time>
           </div>  
         </div>
-        <div class="unread flex flex-row bg-White rounded-md p-2 space-x-4 md:items-center md:p-4">
+        <div class="read flex flex-row bg-White rounded-md p-2 space-x-4 md:items-center md:p-4">
           <a href="#" class="w-1/6">
             <img src="images/avatar-anna-kim.webp" alt="Anna Kim Profile">
           </a>
@@ -124,5 +124,6 @@
         </div>
       </div>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
