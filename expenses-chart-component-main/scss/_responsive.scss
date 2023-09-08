@@ -1,0 +1,26 @@
+@media screen and (max-width: 1053px) {
+    main{
+        width: 63%;
+    }
+    .big{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    main{
+        width: 72%;
+    }
+    .big{
+        font-size: 1.6rem;
+    }
+    .small{
+        font-size: 16px
+    }
+}
+
+@media screen and (max-width: 810px) {
+    main{
+        width: 88%;
+    }
+}

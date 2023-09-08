@@ -11,7 +11,7 @@ body{
 
 main{
     font-family: $global-font;
-    width: 63%;
+    width: 43%;
     margin: 3.6rem auto;
     @include flexCol();
     gap: 2rem;
@@ -40,3 +40,5 @@ main{
 .total-display{
     @include flexShow();
 }
+
+@import 'responsive';
