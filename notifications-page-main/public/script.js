@@ -1,5 +1,5 @@
 const attentionSeeker = document.getElementById('notifications-header').firstElementChild;
-attentionSeeker.classList.add('animate__animated','animate__bounce', 'animate__repeat-2','animate__fast');
+attentionSeeker.classList.add('animate__animated','animate__bounce', 'animate__repeat-3','animate__fast');
 
 const allPosts = document.getElementById('posts-all');
 const markReadBtn = document.getElementById('mark-read');
@@ -14,6 +14,7 @@ unreadNotification.forEach((notification)=>{
     notification.addEventListener('click',()=>{
         notification.classList.remove('bg-lightGrayishBlue1');
         notification.classList.add('bg-White');
+        notification.lastElementChild.firstElementChild.lastElementChild.classList.add('hidden');
     })
 })
 

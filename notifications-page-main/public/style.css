@@ -740,6 +740,10 @@ video {
   color: hsl(224 21% 14% / var(--tw-text-opacity));
 }
 
+.hover\:cursor-pointer:hover{
+  cursor: pointer;
+}
+
 .hover\:bg-lightGrayishBlue1:hover{
   --tw-bg-opacity: 1;
   background-color: hsl(211 68% 94% / var(--tw-bg-opacity));
@@ -759,10 +763,6 @@ video {
   .md\:my-7{
     margin-top: 1.75rem;
     margin-bottom: 1.75rem;
-  }
-
-  .md\:ml-2{
-    margin-left: 0.5rem;
   }
 
   .md\:h-7{
