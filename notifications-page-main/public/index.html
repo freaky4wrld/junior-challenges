@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Notifications page</title>
+</head>
+<body class="bg-lightGrayishBlue2 font-sans">
+  <main class="bg-White flex flex-col p-4 space-y-4">
+      <div id="notifications-header" class="flex flex-row justify-between items-center">
+        <div class="flex flex-row text-veryDarkBlue items-center w-2/5 space-x-1">
+          <a href="#" class="font-bold text-lg">Notifications</a>
+          <a href="#" class="bg-Blue text-White rounded-md w-2/12
+            text-sm text-center font-bold">3</a>
+        </div>
+        <div class="flex flex-row items-center justify-end w-2/5">
+          <a href="#" class="text-darkGrayishBlue" id="mark-read">Mark all as read</a>
+        </div>
+      </div>
+      <div id="posts-all" class="flex flex-col space-y-4">
+        <div class="unread flex flex-row bg-lightGrayishBlue1 rounded-md p-2 space-x-4">
+          <a href="#" class="w-1/6">
+            <img src="images/avatar-mark-webber.webp" alt="Mark Webber Profile" >
+          </a>
+          <div class="flex flex-col w-4/5">
+            <p class="text-grayishBlue font-normal"><span class="text-veryDarkBlue font-bold hover:text-Blue">
+              <a href="#">Mark Webber</a>
+              </span> reacted to your recent post <span class="text-darkGrayishBlue font-bold hover:text-Blue">
+                <a href="#">My first tournament today!</a>
+              </span> <span class="bg-Red w-2 h-2 rounded-full inline-block ml-1"></span>
+            </p>
+            <time class="text-grayishBlue font-normal">1m ago</time>
+          </div>
+        </div>
+        <div class="unread flex flex-row bg-lightGrayishBlue1 rounded-md p-2 space-x-4">
+          <a href="#" class="w-1/6">
+            <img src="images/avatar-angela-gray.webp" alt="Angela Gray Profile">
+          </a>
+          <div class="flex flex-col w-4/5">
+            <p class="text-grayishBlue font-normal"><span class="text-veryDarkBlue font-bold hover:text-Blue">
+              <a href="#">Angela Gray</a>
+              </span> followed you <span class="bg-Red w-2 h-2 rounded-full inline-block ml-1"></span>
+            </p>
+            <time class="text-grayishBlue font-normal">5m ago</time>
+          </div>
+        </div>
+        <div class="unread flex flex-row bg-lightGrayishBlue1 rounded-md p-2 space-x-4">
+          <a href="#" class="w-1/6">
+            <img src="images/avatar-jacob-thompson.webp" alt="Jacob Thompson Profile">
+          </a>
+          <div class="flex flex-col w-4/5">
+            <p class="text-grayishBlue font-normal"><span class="text-veryDarkBlue font-bold hover:text-Blue">
+              <a href="#">Jacob Thompson</a>
+              </span> has joined your group <span class="text-Blue font-bold hover:text-Blue">
+                <a href="#">Chess Club</a>
+              </span> <span class="bg-Red w-2 h-2 rounded-full inline-block ml-1"></span>
+            </p>
+            <time class="text-grayishBlue font-normal">1 day ago</time>
+          </div>
+        </div>
+        <div class="read flex flex-row bg-White rounded-md p-2 space-x-4">
+          <a href="#" class="w-1/6">
+            <img src="images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin Profile">
+          </a>
+          <div class="flex flex-col w-4/5">
+            <p class="text-grayishBlue font-normal"><span class="text-veryDarkBlue font-bold hover:text-Blue">
+              <a href="#">Rizky Hasanuddin</a>
+              </span> sent you a private message
+            </p>
+            <time class="text-grayishBlue font-normal">5 days ago</time>
+            <div id="message" class="border border-grayishBlue p-3 text-base text-darkGrayishBlue rounded-md
+               mt-4 hover:bg-lightGrayishBlue1">
+              Hello, thanks for setting up the Chess Club. I've been a member for a few weeks
+              now and I'm already having lots of fun and improving my game.
+            </div>
+          </div>
+        </div>
+        <div class="read flex flex-row bg-White rounded-md p-2 space-x-4">
+          <a href="#" class="w-1/6">
+            <img src="images/avatar-kimberly-smith.webp" alt="Kimberly Smith Profile">
+          </a>
+          <div class="flex flex-col w-3/5">
+            <p class="text-grayishBlue font-normal"><span class="text-veryDarkBlue font-bold hover:text-Blue">
+              <a href="#">Kimberly Smith</a>
+              </span> commented on your picture
+            </p>
+            <time class="text-grayishBlue font-normal">1 week ago</time>
+          </div>
+          <a href="#" class="w-1/6 float-right">
+            <img src="images/image-chess.webp" alt="" class="w-11/12">
+          </a>
+        </div>
+        <div class="unread flex flex-row bg-White rounded-md p-2 space-x-4">
+          <a href="#" class="w-1/6">
+            <img src="images/avatar-nathan-peterson.webp" alt="Nathan Peterson Profile" >
+          </a>
+          <div class="flex flex-col w-4/5">
+            <p class="text-grayishBlue font-normal"><span class="text-veryDarkBlue font-bold hover:text-Blue">
+              <a href="#">Nathan Peterson</a>
+              </span> reacted to your recent post <span class="text-darkGrayishBlue font-bold hover:text-Blue">
+                <a href="#">5 end-game strategies to increase your win rate</a>
+              </span>
+            </p>
+            <time class="text-grayishBlue font-normal">2 weeks ago</time>
+          </div>  
+        </div>
+        <div class="unread flex flex-row bg-White rounded-md p-2 space-x-4">
+          <a href="#" class="w-1/6">
+            <img src="images/avatar-anna-kim.webp" alt="Anna Kim Profile">
+          </a>
+          <div class="flex flex-col w-4/5">
+            <p class="text-grayishBlue font-normal"><span class="text-veryDarkBlue font-bold hover:text-Blue">
+              <a href="#">Anna Kim</a>
+              </span> left the group <span class="text-Blue font-bold hover:text-Blue">
+                <a href="#">Chess Club</a>
+              </span>
+            </p>
+            <time class="text-grayishBlue font-normal">2 weeks ago</time>
+          </div>
+        </div>
+      </div>
+  </main>
+</body>
+</html>
