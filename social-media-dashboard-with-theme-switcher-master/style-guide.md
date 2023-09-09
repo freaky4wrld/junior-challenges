@@ -11,21 +11,21 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Lime Green: hsl(163, 72%, 41%)
-- Bright Red: hsl(356, 69%, 56%)
+- Lime Green: 
+- Bright Red: 
 
-- Facebook: hsl(208, 92%, 53%)
-- Twitter: hsl(203, 89%, 53%)
-- Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%)
-- YouTube: hsl(348, 97%, 39%)
+- Facebook: 
+- Twitter: 
+- Instagram: linear gradient  to hsl
+- YouTube: 
 
 #### Dark Theme
 
-- Toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%)
+- Toggle: linear gradient  to 
 
 #### Light Theme
 
-- Toggle: hsl(230, 22%, 74%)
+- Toggle: 
 
 ### Neutral
 
@@ -83,36 +83,36 @@ The designs were created to the following widths:
 
 
 
-  Overview - Today
+  
 
-  Page Views
-  87
-  3%
+  
+  
+  
 
-  Likes
-  52
-  2%
+  
+  
+  
 
-  Likes
-  5462
-  2257%
+  
+  
+  
 
-  Profile Views
-  52k
-  1375%
+  
+  
+  
 
-  Retweets
-  117
-  303%
+  
+  
+  
 
-  Likes
-  507
-  553%
+  
+  
+  
 
-  Likes
-  107
-  19%
+  
+  
+  
 
-  Total Views
-  1407
-  12%
+  
+  
+  

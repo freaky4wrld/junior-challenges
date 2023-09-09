@@ -1,5 +1,6 @@
 @import 'config';
 @import 'toggle_utilities';
+@import 'utilities';
 
 *{
     margin: 0;
@@ -8,4 +9,43 @@
 }
 body{
     font-family: 'Inter', sans-serif;
+    background-color: $bg-color;
+}
+header{
+    background-color: $head-color;
+    display: flex;
+    min-height: 48vh;
+    padding: 1.6rem;
+    justify-content: space-around;
+}
+#toggle{
+    display: flex;
+    align-items: start;
+    gap: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+#accounts-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    width: 84%;
+    margin: 0 auto
+}
+
+.account-cards{
+    background-color: $card-color;
+    @include flexCol();
+    justify-content: center;
+    align-items: center;
+    padding: 1.6rem;
+    gap: 2rem;
+}
+.follow-n-subs{
+    @include flexCol();
+    align-items: center;
+    justify-content: center;
 }
