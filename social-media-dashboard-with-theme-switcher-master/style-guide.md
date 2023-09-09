@@ -1,0 +1,118 @@
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Lime Green: hsl(163, 72%, 41%)
+- Bright Red: hsl(356, 69%, 56%)
+
+- Facebook: hsl(208, 92%, 53%)
+- Twitter: hsl(203, 89%, 53%)
+- Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%)
+- YouTube: hsl(348, 97%, 39%)
+
+#### Dark Theme
+
+- Toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%)
+
+#### Light Theme
+
+- Toggle: hsl(230, 22%, 74%)
+
+### Neutral
+
+#### Dark Theme
+
+
+
+
+
+
+
+#### Light Theme
+
+- White: hsl(0, 0%, 100%); //(BG)
+
+## Typography
+
+### Body Copy
+
+- Font size (Overview Card Headings): 14px
+
+### Font
+
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 700
+
+
+
+
+  
+
+  Dark Mode
+
+  
+
+  @nathanf
+  1987
+  Followers
+  12 Today
+
+  @nathanf
+  1044
+  Followers
+  99 Today
+
+  @realnathanf
+  11k
+  Followers
+  1099 Today
+
+  Nathan F.
+  8239
+  Subscribers
+  144 Today
+
+
+
+  Overview - Today
+
+  Page Views
+  87
+  3%
+
+  Likes
+  52
+  2%
+
+  Likes
+  5462
+  2257%
+
+  Profile Views
+  52k
+  1375%
+
+  Retweets
+  117
+  303%
+
+  Likes
+  507
+  553%
+
+  Likes
+  107
+  19%
+
+  Total Views
+  1407
+  12%
