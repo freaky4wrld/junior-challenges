@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Plus+Jakarta+Sans:wght@200;300;400;500;800&display=swap');
+
+$card-headings-size: 18px;
+
+// Dark theme
+$very-dark-blue: hsl(230, 17%, 14%); //(BG)
+$very-dark-blue-top: hsl(232, 19%, 15%); //(Top BG Pattern)
+$dark-desaturated-blue: hsl(229, 27%, 20%); //(Card BG)
+$desaturated-blue: hsl(228, 34%, 66%); //(Text)
+$white: hsl(0, 0%, 100%); //(Text) (Light-theme-BG)
+$toggle-gradient: linear-gradient(90deg, #326372, #86f7b5);
+// Light theme
+$very-pale-blue: hsl(225, 100%, 98%); //(Top BG Pattern)
+$light-grayish-blue: hsl(227, 47%, 96%); //(Card BG)
+$dark-grayish-blue: hsl(229, 12%, 44%); //(Text)
+$very-dark-blue: hsl(230, 17%, 14%); //(Text)
