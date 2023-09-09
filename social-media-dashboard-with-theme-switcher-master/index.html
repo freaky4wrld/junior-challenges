@@ -6,22 +6,78 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <title>Frontend Mentor | Social Media Dashboard</title>
 
 </head>
 <body>
     <header>
       <div id="pg-headings">
-        <h1>Social Media Dashboard</h1>
-        <p>Total Followers: 23,004</p>
+        <h1 class="text-light bold normal">Social Media Dashboard</h1>
+        <p class="text-dark bold small">Total Followers: 23,004</p>
       </div>
       <div id="toggle">
-        <label for="toggle-switch">Dark Mode</label>
+        <label for="toggle-switch" class="text-dark bold small">Dark Mode</label>
         <label for="toggle-switch" class="switch">
           <input type="checkbox" name="toggle-switch" id="toggle-switch">
           <span class="slider round"></span>
         </label>
       </div>
     </header>
+    <main>
+      <div id="accounts-list">
+        <div class="account-cards">
+          <div class="handles">
+            <a href="#"><img src="images/icon-facebook.svg"></a>
+            <a href="#" class="text-dark small light">@nathanf</a>
+          </div>
+          <div class="follow-n-subs">
+            <a href="#" class="text-light bold big"> 1987<span class="thin">Followers</span></a>
+            <div class="count">
+              <img src="images/icon-up.svg">
+              <div class="small up bold">12 Today</div>
+            </div>
+          </div>
+        </div>
+        <div class="account-cards">
+          <div class="handles">
+            <a href="#"><img src="images/icon-twitter.svg"></a>
+            <a href="#" class="text-dark small light">@nathanf</a>
+          </div>
+          <div class="follow-n-subs">
+            <a href="#" class="text-light bold big"> 1044<span class="thin">Followers</span></a>
+            <div class="count">
+              <img src="images/icon-up.svg">
+              <div class="small up bold">99 Today</div>
+            </div>
+          </div>
+        </div>
+        <div class="account-cards">
+          <div class="handles">
+            <a href="#"><img src="images/icon-instagram.svg"></a>
+            <a href="#" class="text-dark small light">@realnathanf</a>
+          </div>
+          <div class="follow-n-subs">
+            <a href="#" class="text-light bold big"> 11k<span class="thin">Followers</span></a>
+            <div class="count">
+              <img src="images/icon-up.svg">
+              <div class="small up bold">1099 Today</div>
+            </div>
+          </div>
+        </div>
+        <div class="account-cards">
+          <div class="handles">
+            <a href="#"><img src="images/icon-youtube.svg"></a>
+            <a href="#" class="text-dark small light">Nathan F.</a>
+          </div>
+          <div class="follow-n-subs">
+            <a href="#" class="text-light bold big"> 8239<span class="thin">Subscribers</span></a>
+            <div class="count">
+              <img src="images/icon-up.svg">
+              <div class="small down bold">144 Today</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 </body>
 </html>
