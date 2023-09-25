@@ -5,16 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 </head>
 <body>
-
-  We're coming soon
-
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
+  <header>
+    <a href="#" id="logo">
+      <img src="images/logo.svg">
+    </a>
+  </header>
+  <main>
+    <div id="img-container">
+      <img src="images/hero-mobile.jpg" alt="girl in style" class="mobile">
+      <img src="images/hero-desktop.jpg" alt="girl in style" style="display: none;" class="dis">
+    </div>
+    <div id="info-and-email">
+      <div id="text-container">
+        <h1 id="heading">
+          <span class="light">We're</span>
+          <span class="dark">coming</span>
+          <span class="dark">soon</span>
+        </h1>
+        <article>
+          Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </article>
+      </div>
+      <form action="#">
+        <input type="email" name="email" id="email" placeholder="Email Address">
+        <button type="submit" id="confirm">
+          <img src="images/icon-arrow.svg">
+        </button>
+      </form>
+    </div>
+  </main>
 </body>
 </html>
