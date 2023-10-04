@@ -1,0 +1,38 @@
+@media screen and (min-width: 800px) {
+    .grid{
+        display: grid;
+    }
+    .grid--half{
+        grid-template-columns: 3fr 1fr;
+    }
+    #img-container{
+        order: 2;
+    }
+    #text-container{
+        order: 1;
+    }
+    .full-width{
+        position: relative;
+        top: -117px;
+    }
+    .text__heading, .text__info{
+        text-align: left;
+    }
+    .header, .container--bg{
+        padding-top: 3rem;
+        padding-left: 9rem;
+    }
+    .text__info{
+        width: 73%;
+    }
+    form{
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    #email{
+        width: 25.9%;
+    }
+    .btn{
+        left: 286px;
+    }
+}

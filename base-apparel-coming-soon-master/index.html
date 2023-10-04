@@ -15,11 +15,12 @@
     </a>
   </header>
   <main class="grid grid--half">
-    <picture class="container">
-      <source srcset="images/hero-mobile.jpg" media="(orientation: portrait)" />
-      <img src="images/hero-desktop.jpg"/>
+    <picture class="container" id="img-container">
+      <source srcset="images/hero-mobile.jpg" media="(max-width: 375px)" />
+      <source srcset="images/hero-desktop.jpg" media="(max-width: 610px)" />
+      <img src="images/hero-desktop.jpg" class="full-width"/>
     </picture>
-    <div class="container container--bg">
+    <div class="container container--bg container--order" id="text-container">
       <div class="text flex-col col-gap">
         <div class="text__heading">
           <h1 class="flex-col">
