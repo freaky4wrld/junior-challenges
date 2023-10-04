@@ -1,64 +1,84 @@
 @import 'config';
-@import 'utilities';
+// @import 'utilities';
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    @include applyAlternateGradient();
-    @include applyFont();
-}
-header{
+
+// HEADER BLOCK
+.header, .container--bg{
+    @include applyBgGradient();
     padding: 2rem;
 }
-#img-container{
-    width: 100%;
-    img{
-        width: 100%;
-    }
+
+// TEXT CONTAINER
+.text{
+    @include applyCustomFont();
 }
-#heading{
-    @include flexCol();
+.text__heading{
     text-transform: uppercase;
+    font-size: 1.6rem;
     letter-spacing: 0.7rem;
-    align-items: center;
-    font-size: 2.7rem;
+    text-align: center;
 }
-#info-and-email{
-    padding: 4rem 2rem;
-    @include flexCol();
-    gap: 3rem;
-    align-items: center;
-}
-#text-container{
-    @include flexCol();
-    gap: 1.5rem;
-    align-items: center;
-    article{
-        font-size: $default-font-size;
-        line-height: 1.5;
-        text-align: center;
-        color: $desaturated-red;
-    }
-}
-#confirm{
-    @include applyGradient();
-    border: none;
-    position: relative;
-    right: 43px;
-    top: 1.6px;
-    padding: 0.9rem 1.9rem;
-    border-radius: 2rem;
-    margin-top: 1rem;
-    box-shadow: 3px 1px 21px $desaturated-red;
-}
-input{
-    font-size: $default-font-size;
-    background-color: transparent;
-    border: solid 1.6px $desaturated-red;
+.text__heading--light{
+    font-weight: 300;
     color: $desaturated-red;
-    padding: 0.9rem 1.6rem;
-    border-radius: 2rem;
-    margin-top: 0.3rem;
 }
+.text__heading--dark{
+    font-weight: 600;
+    color: $dark-grayish-red;
+}
+.text__info{
+    color: $desaturated-red;
+    text-align: center;
+    line-height: 1.6;
+    font-size: $default-font-size;
+}
+
+// FORM
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#email{
+    border: solid 1.6px $desaturated-red;
+    font-size: $default-font-size;
+    background: transparent;
+    padding: 0.7rem 1.2rem;
+    position: absolute;
+    border-radius: 2rem 0 0 2rem ;
+    @include applyCustomFont();
+    color: $desaturated-red;
+}
+#email:focus{
+    outline: none;
+}
+.error__svg{
+    visibility: hidden;
+    position: relative;
+    left: 109px;
+}
+.btn{
+    position: relative;
+    padding: 0.64rem 1.6rem;
+    left: 111px;
+}
+.btn--gradient{
+    @include applyBtnGradient();
+    border: none;
+}
+.btn--round{
+    border-radius: 2rem;
+}
+.btn--shadow{
+    box-shadow: 4px 4px 10px $desaturated-red;
+}
+.btn:hover{
+    filter: brightness(1.11);
+    box-shadow: 7px 7px 10px $desaturated-red;
+    cursor: pointer;
+}
+
